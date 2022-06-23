@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView01"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#23009688"
+    android:backgroundTint="#FF0000"
+    android:scrollbars="vertical">
+
+  <LinearLayout
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="401dp"
+        android:layout_height="wrap_content"
+        android:text="Saisie des véhicules"
+        android:textAlignment="center"
+        android:textColor="#3F51B5"
+        android:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/TextViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="feedbacktitle"
+        android:textSize="34sp"></TextView>
+
+    <EditText
+        android:id="@+id/EditTextName"
+        android:layout_width="143dp"
+        android:layout_height="wrap_content"
+        android:hint="feedbackname"
+        android:inputType="textPersonName"
+        tools:ignore="TouchTargetSizeCheck"></EditText>
+
+    <EditText
+        android:id="@+id/EditTextEmail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="feedbackemail"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"></EditText>
+
+    <EditText
+        android:id="@+id/EditTextFeedbackBody"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="feedbackbody"
+        android:inputType="textMultiLine"
+        android:lines="5"></EditText>
+
+    <Button
+        android:id="@+id/ButtonSendFeedback"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="sendfeedback"
+        android:text="feedbackbutton"></Button>
+
+    <TextView
+        android:id="@+id/TextViewResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10pt"></TextView>
+  </LinearLayout>
+</ScrollView>
